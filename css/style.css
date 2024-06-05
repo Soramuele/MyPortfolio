@@ -28,6 +28,9 @@ body{
     color: #E29BA7;
 }
 
+a{
+    text-decoration: none;
+}
 .site_header{
     position: sticky;
     top: 0;
@@ -37,10 +40,6 @@ body{
     justify-content: space-between;
     align-items: center;
     background: #121212;
-}
-
-a{
-    text-decoration: none;
 }
 
 .title{
@@ -130,8 +129,44 @@ a{
     }
 }
 
-.game_programming{
+.titles{
     padding-left: 5%;
-    font-weight: 700;
+    font-weight: 900;
     font-size: xx-large;
+    color: #8BC5BF;
+}
+
+
+.technical ul{
+    padding: 0 10%;
+    list-style-type: none;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: x-large;
+    
+}
+.technical li{
+    padding: 5px 5px;
+    float: left;
+    margin: 0 5px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.site_footer{
+    background: #8BC5BF;
+    color: #121212;
+    bottom: 0;
+}
+.presentation{
+    padding-left: 5%;
+    padding-top: 25px;
+    margin-bottom: -5px;
+    font-weight: 900;
+    font-size: xx-large;
+}
+.information_text{
+    padding: 0 10%;
+    font-size: x-large;
+    font-weight: 500;
 }
