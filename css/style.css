@@ -99,7 +99,6 @@ a{
     }
 }
 
-
 /* - BODY - */
 .site-header {
     position: sticky;
@@ -209,7 +208,7 @@ a{
 .hanze, .school {
     background-color: #232323;
     border-radius: 5px;
-    padding: 5px 15px;
+    text-align: center;
 }
 .experience ul{
     padding: 0 5%;
@@ -237,7 +236,6 @@ a{
 .presentation-text {
     margin: 0 10%;
 }
-
 @media (min-width: 768px) {
     .about-information {
         display: flex;
@@ -263,6 +261,9 @@ a{
         justify-content: center;
         margin-bottom: 64px;
     }
+    .hanze, .school {
+    width: calc(50% - 8px);
+}
     .education h3 {
         font-weight: 700;
         font-size: x-large;
@@ -288,8 +289,28 @@ a{
     .education {
         flex-direction: column;
     }
+    .hanze, .school {
+    width: 100%;
+}
     .education h3 {
         font-weight: 700;
         font-size: large;
     }
+}
+
+/*LosGatos*/
+.close-portfolio {
+    padding: 10px 5%;
+    margin-bottom: 20px;
+}
+.go-back {
+    display: flex;
+    gap: 15px;
+}
+
+@media (min-width: 768px) {
+    
+}
+@media (min-width: 768px) {
+    
 }
