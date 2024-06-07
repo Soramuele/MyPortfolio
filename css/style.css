@@ -56,6 +56,12 @@ a{
         font-size: 36px;
         color: #8BC5BF;
         margin-left: 5%;
+        margin-top: 16px;
+    }
+    h3{
+        font-weight: 700;
+        font-size: x-large;
+        color: #E29BA7;
     }
     span{
         font-size: large;
@@ -77,6 +83,12 @@ a{
         font-size: 32px;
         color: #8BC5BF;
         margin-left: 5%;
+        margin-top: 16px;
+    }
+    h3{
+        font-weight: 700;
+        font-size: large;
+        color: #E29BA7;
     }
     span{
         color: #8BC5BF;
@@ -132,7 +144,73 @@ a{
     color: #E29BA7;
     font-weight: 300;
 }
-
+.game-programming {
+    padding: 0 5%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+.portfolio-block {
+    background-color: #232323;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.portfolio-image {
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+.portfolio-content {
+    padding: 5%;
+    color: white;
+}
+.portfolio-title, .portfolio-arrow {
+    margin: 0;
+}
+.title-game {
+    display: flex;
+    justify-content: space-between;
+}
+.title-game:hover h3{
+    color: white;
+}
+.portfolio-role {
+    color: #E29BA7;
+}
+.portfolio-description {
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+.portfolio-details {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0 5%;
+}
+.portfolio-details i {
+    color: white;
+}
+.portfolio-details div {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+.portfolio-details span{
+    margin-left: 5px;
+    color: white;
+}
+.education {
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.hanze, .school {
+    background-color: #232323;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
 .experience ul{
     padding: 0 5%;
     list-style-type: none;
@@ -148,7 +226,6 @@ a{
     border: 1px solid;
     border-radius: 5px;
 }
-
 .site-footer {
     background: #8BC5BF;
     color: #121212;
@@ -166,6 +243,7 @@ a{
         display: flex;
         margin: 20px 5%;
         align-items: center;
+        padding-bottom: 64px;
     }
     .profile-image {
         margin-right: 48px;
@@ -173,7 +251,22 @@ a{
     .about-text {
         font-size: 34px;
     }
-
+    .game-programming {
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 64px;
+    }
+    .portfolio-block {
+        width: calc(50% - 8px);
+    }
+    .education {
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+    .education h3 {
+        font-weight: 700;
+        font-size: x-large;
+    }
 }
 @media (max-width: 768px) {
     .about-information {
@@ -185,5 +278,18 @@ a{
     .about-text {
         font-size: 28px;
     }
-
+    .game-programming {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-block {
+        width: 100%;
+    }
+    .education {
+        flex-direction: column;
+    }
+    .education h3 {
+        font-weight: 700;
+        font-size: large;
+    }
 }
