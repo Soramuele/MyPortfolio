@@ -109,6 +109,7 @@ a{
     justify-content: space-between;
     align-items: center;
     background: #121212;
+    z-index: 999;
 }
 .reference {
     display: flex;
@@ -228,6 +229,7 @@ a{
 .site-footer {
     background: #8BC5BF;
     color: #121212;
+    padding-bottom: 1px;
 }
 .presentation {
     padding-top: 25px;
@@ -244,7 +246,7 @@ a{
         padding-bottom: 64px;
     }
     .profile-image {
-        margin-right: 48px;
+        margin-right: 75px;
     }
     .about-text {
         font-size: 34px;
@@ -298,19 +300,89 @@ a{
     }
 }
 
-/*LosGatos*/
-.close-portfolio {
-    padding: 10px 5%;
-    margin-bottom: 20px;
-}
+/*portfolio*/
 .go-back {
+    float: left;
+    padding: 10px 5%;
+}
+.go-back:hover h3{
+    color: white;
+}
+.game-gif {
+    padding: 0 5%;
+    padding-bottom: 15px;
+}
+.game-gif img {
+    width: 100%;
+}
+.game-name {
+    background-color: #232323cc;
+    position: sticky;
+    margin-top: -75px;
+    height: 75px;
+    align-content: center;
+}
+.game-data {
     display: flex;
+    padding: 0 5%;
+    align-items: top;
+    gap: 15px;
+    padding-bottom: 32px;
+}
+.game-about, .game-info {
+    background-color: #232323;
+    border-radius: 5px;
+    padding: 5px 5%;
+}
+.game-team {
+    font-weight: 500;
+    padding-bottom: 25px;
+}
+.game-team div {
+    padding-bottom: 10px;
+}
+.game-team i {
+    padding-right: 10px;
+}
+.introduction, .my-work, .learned {
+    padding-bottom: 32px;
+}
+.introduction p , .my-work p, .learned p{
+    padding: 0 5%;
+}
+.game-images {
+    display: flex;
+    padding: 10px 5%;
     gap: 15px;
 }
-
-@media (min-width: 768px) {
-    
+.game-images img {
+    border-radius: 5px;
 }
 @media (min-width: 768px) {
-    
+    .game-team {
+        font-size: 22px;
+    }
+    .game-about, .game-info {
+        width: calc(50% - 8px);
+    }
+    .game-images {
+        flex-direction: row;
+    }
+    .game-images img {
+        width: calc(50% - 8px);
+    }
+}
+@media (max-width: 768px) {
+    .game-data {
+        flex-direction: column;
+    }
+    .game-team {
+        font-size: 18px;
+    }
+    .game-images {
+        flex-direction: column;
+    }
+    .game-images img {
+        width: 100%;
+    }
 }
