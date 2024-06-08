@@ -140,6 +140,9 @@ a{
     border: 5px solid;
     border-radius: 50%;
 }
+.about-information {
+    padding-top: 64px;
+}
 .about-text {
     color: #E29BA7;
     font-weight: 300;
@@ -155,13 +158,11 @@ a{
     border-radius: 5px;
     overflow: hidden;
 }
-.portfolio-image {
-    height: 300px;
-    background-size: cover;
-    background-position: center;
+.portfolio-image img {
+    width: 100%;
 }
 .portfolio-content {
-    padding: 5%;
+    padding: 10px 5%;
     color: white;
 }
 .portfolio-title, .portfolio-arrow {
@@ -184,9 +185,12 @@ a{
 .portfolio-details {
     display: flex;
     justify-content: space-between;
-    height: 35px;
-    background-color: rgba(0, 0, 0, 0.2);
     padding: 0 5%;
+    background-color: #232323cc;
+    position: sticky;
+    margin-top: -50px;
+    height: 50px;
+    align-content: center;
 }
 .portfolio-details i {
     color: white;
