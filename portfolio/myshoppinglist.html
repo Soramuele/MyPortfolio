@@ -37,16 +37,19 @@
                 <div class="game-data">
                     <div class="game-about">
                         <h3>About</h3>
-                        <p>Los Gatos is a top-down rpg game based on a prison escape. In this adventure, our little Pierre needs to find his way out of prison while making friends with other inmates to increase his chanses. While doing that he must find clues and items to expose the truth behind his false accusation.</p>
+                        <p>
+                            MyShoppingList is a phone app that was thought to be implemented to Albert Heijn app as an interactive shopping list.
+                            Here people can write their shopping list or add products directly from the supermarket products list or even from the integrated recipe book.
+                        </p>
                     </div> 
                     <div class="game-info">
                         <h3>Project Info</h3>
                         <div class="game-team">
-                            <div><i class="fa fa-calendar"></i>Date: Feb 2024</div>
+                            <div><i class="fa fa-calendar"></i>Date: Jun 2024</div>
                             <div><i class="fa fa-user"></i>Role: Programmer</div>
-                            <div><i class="fa fa-group"></i>Team size: 5</div>
-                            <div><i class="fa fa-clock-o"></i>Time frame: 7 weeks</div>
-                            <div><i class="fa fa-wrench"></i>Engine: GameMaker</div>
+                            <div><i class="fa fa-group"></i>Team size: 4</div>
+                            <div><i class="fa fa-clock-o"></i>Time frame: 14 weeks</div>
+                            <div><i class="fa fa-wrench"></i>Engine: Unity</div>
                         </div>
                     </div>
                 </div>
@@ -54,27 +57,56 @@
             <div class="introduction">
                 <h2>Introduction</h2>
                 <p>
-                    This demo game was a fun and challenging project for me, where I had the opportunity to work in GameMaker for my first time and learn a new programming language.
+                    Working on this project was very interesting and a really good experience for me to learn more about Unity.
+                    That because for a project like this Unity is not the right choice, as it's specific for video games and not for applications.
                 </p><p>
-                    In order to learn this new engine I had to slower my performance to give me time to properly learn the language and how GameMaker works and execute the scripts. So I decided to create a few test game following GameMakerofficial tutorials before starting to work on this game.
+                    This wasn't my first time working in Unity but this project was nonetheless challenging and inspiring.
+                    Thanks to that, I had the opportunity to exploit Unity how I never did during my studies and pushing myself more and more.
                 </p><p>
-                    Working on a game based on a dialogue system was still really hard for me as there was so little documentation about it.
-                    Anyways I managed to created a branching dialogue that works perfecty for the game, leaving me with a fun and challenging experience.
+                    I really liked working on the shopping list because I was able to use and expand my knowledge at the same time.
+                    The real challenge laid in connecting all the scripts together keeping the best efficiency possible, so I tried to limit the use of the Update method as much as possible to save memory and computational time.
                 </p><p>
-                    Working on a team was a fun and educational experience as it allows for a more dynamic and collaborative work environment, where I can bounce ideas off of the other programmer and learn from his diverse perspectives and expertise.
-                    However, I prefer working as the only programmer as it allows me to focus on every part of the project without having to study other programmers way of writing code, so to be able to make scripts interract with each other more easly and quickly.
-                    Hopefully, during this project we managed to split our job perfectly and without having to look into each others code.
+                    Anyways implementing the gyroscope was really hard both because it was the first time I used it and because of the difficulty in replacing it with an analogue one to move the view.
+                    Because of that I had to spend almost a third of my time researching it's documentation and learning how to use it properly.
+                </p><p>
+                    On this project I worked as the only programmer of the group and because of the type of project it allowed me to move freely between every script without worry about conflicts with other programmer.
+                    I think that it was the best choice for me but I still recognize that for the sake of the project it would be better to have more than one programmer.
                 </p>
             </div>
             <div class="my-work">
-                <h2>The dialogue system</h2>
+                <h2>The lists</h2>
                 <p>
-                    This wasn't my first time developing a dialogue system, as I already created one but in Unity.
-                    Because of that I initially though it was gonna be similar, but I was wrong.
-                    While on Unity I could create my own dialogue manager with the relative dialogue branching, on GameMaker I had to rely on Chatterbox and Crochet, where Chatterbox is an implementation for GameMaker, that manage the external dialogue editor Crochet.
+                    For this project I took creating the shopping and products list as a competition between myself.
+                    It is true that I already used Unity before so I already had some experience, but first I never did a project this big and second I never programmed anything with filters for text.
                 </p><p>
-                    This gave me a bit of trouble as there was little documentation and difficulty in linking a certain response to a defined script.
-                    Unfortunately for us we didn't had much time so I had to create a branching dialogue without effect or visual action related to the dialog.
+                    For the products list my first though was to use a List type variable to store names and prices of the products, but after creating that I soon realized it's inefficiency.
+                    So I scraped everything and decided to use a siriptable object to store every products data.
+                    Doing so I was able to add images for each product and the relative amount, and also avoiding multiple copy in different scripts and having to always keep an eye for changes.
+                    In that way I connected the products list and the shopping list together easly, as everything depended from the amount of item in the scriptable object.
+                    So I decided to improve the list system, adding total amount of price for each product that was written multiple times and a system to show if an item was already inside the shopping list.
+                </p><p>
+                    After that I only needed to create the recipe book.
+                    For that I decided to write a txt file for each recipe and let a script show it on screen.
+                    Having each recipe on different files allowed me to also recude the amount of code needed to create a list of recipe and instantiate their personal prefab in the scene.
+                </p>
+                <div class="game-images">
+                    <img src="/images/LosGatos/dialogues.png" alt="Shopping & products list">
+                    <img src="/images/LosGatos/dialogues.png" alt="Recipe book">
+                </div>
+            </div>
+            <div class="my-work">
+                <h2>The gyroscope</h2>
+                <p>
+                    The gyroscope was the most difficult part to implement into the app.
+                    Our idea for this project was to create along the interactive shopping list also a map based on the supermarket the user is and help him find his way to have a better shopping experience.
+                    In other words we wanted to create a 3D navigation map that follow and help the user during his shopping.
+                </p><p>
+                    This turned out to be a more difficult task than expected, as we underestimated our abilities for a project bigger than our (and my) ability.
+                    Even if the task turned out to be very hard and exausting I still enjoyed working on it.
+                    I researched a lot of material for the gyroscope and had to spend a considerate amount of time to test everything in order to make it work.
+                </p><p>
+                    Also because of the the impossibility of precisely estimating the user's position with GPS and without precise triangulation, I decided to switch the movement from that to a simple touch joystick.
+                    That allowed me to focus better on the other parts of the project and have a perfectly working showcase, without having to worry about the inaccuracy of the GPS that may have hindered the presentation.
                 </p>
                 <div class="game-images">
                     <img src="/images/LosGatos/dialogues.png" alt="Los Gatos dialogues">

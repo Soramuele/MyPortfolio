@@ -318,13 +318,15 @@ a{
 }
 .game-gif img {
     width: 100%;
+    border-radius: 5px;
 }
 .game-name {
     background-color: #232323cc;
     position: sticky;
     margin-top: -75px;
-    height: 75px;
+    height: 72px;
     align-content: center;
+    border-radius: 0 0 5px 5px;
 }
 .game-data {
     display: flex;
