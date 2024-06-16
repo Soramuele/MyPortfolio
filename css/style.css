@@ -21,17 +21,18 @@
 }
 
 /*
---color: #121212
---color: #232323
---color: #E29BA7
---color: #8BC5BF
+--colour: #121212 -black (header background)
+--colour: #171717 -dark-grey (body background)
+--colour: #232323 -grey (body cells)
+--colour: #E29BA7 -pink (titles)
+--colour: #8BC5BF -light blue (main title + footer background)
 */
 
 body{
     font-family: 'Lato', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
+    background-color: #171717;
     color: white;
 }
 a{
@@ -356,10 +357,22 @@ a{
 .introduction p , .my-work p, .learned p{
     padding: 0 5%;
 }
+.my-work a {
+    color: white;
+    text-decoration: underline;
+}
 .game-images {
     display: flex;
     padding: 10px 5%;
     gap: 15px;
+}
+.game-1-image {
+    display: flex;
+    justify-content: center;
+    padding: 10px 5%;
+}
+.game-1-image img {
+    border-radius: 5px;
 }
 .game-images img {
     border-radius: 5px;
@@ -377,6 +390,9 @@ a{
     .game-images img {
         width: calc(50% - 8px);
     }
+    .game-1-image img {
+        width: 50%;
+    }
 }
 @media (max-width: 768px) {
     .game-data {
@@ -389,6 +405,9 @@ a{
         flex-direction: column;
     }
     .game-images img {
+        width: 100%;
+    }
+    .game-1-image img {
         width: 100%;
     }
 }
